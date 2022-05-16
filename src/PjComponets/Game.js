@@ -17,7 +17,7 @@ class Game extends Component {
 
     render() {
         return (
-            <div className="Game">
+            <div className="Gam">
                 <Team
                     teamname="Tigers"
                     logo="https://cdn.logojoy.com/wp-content/uploads/2018/05/30161552/8_big16-768x591.png"
