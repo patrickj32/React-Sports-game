@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 
-
 class Team extends Component {
 
     constructor(props) {
@@ -14,12 +13,13 @@ class Team extends Component {
 
     }
 
-    //alternatively you can do this to set the initial state instead of the construcot stuff above
+    //alternatively you can do this to set the initial state instead of the constructor stuff above
 
     // state = {
     //     shotstaken: 0,
     //     score: 0
     // }
+
 
     increaseShotCounter = () => {
         console.log("the button has been pressed")
@@ -31,6 +31,8 @@ class Team extends Component {
             })
         )
 
+      
+
 
 
         if (Math.random() > .5) {
@@ -38,8 +40,14 @@ class Team extends Component {
             this.setState(
                 (state, props) => ({
                     score: state.score + 1
+
+    
                 })
-            )
+                )
+
+            var youScored = new Audio('./Audio/Swish.mp3');
+            youScored.play()
+
 
         }
 

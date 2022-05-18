@@ -1,10 +1,16 @@
 
 import React, { Component } from 'react'
-import Team from './PjComponets/Team'
-import TeamTwoLogo from './PjComponets/images/Gonzo.jpg'
+// import Team from './PjComponets/Team'
+// import TeamTwoLogo from './PjComponets/images/Gonzo.jpg'
 import Game from './PjComponets/Game'
 
+
+
+
 class App extends Component {
+
+
+  
   render() {
     return (
       <div className='App'>
