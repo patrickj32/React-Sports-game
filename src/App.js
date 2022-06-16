@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react'
 import Game from './PjComponets/Game'
-import GameWithHooks from './PjComponets/GameWithHooks'
 
 
 
@@ -15,7 +14,6 @@ class App extends Component {
       <div className='App'>
         {/* <Game /> */}
         <Game />
-        <GameWithHooks />
 
         
     

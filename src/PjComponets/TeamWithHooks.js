@@ -3,7 +3,7 @@ import { useState } from 'react';
 // import TeamTwoLogo from './images/Gonzo.jpg'
 
 
-function GameWithHooks(props) {
+function TeamWithHooks(props) {
 
 
     let [shotstaken, setShotsTaken] = useState(0)
@@ -23,7 +23,13 @@ function GameWithHooks(props) {
             setScore(
                score + 1
             )
+
+            var youScored = new Audio('./Audio/Swish.mp3');
+            youScored.play()
+
         }
+
+    
     }
 
 
@@ -45,11 +51,11 @@ function GameWithHooks(props) {
 
 
     return (
-        <div className='GameWithHooks'>
+        <div className='TeamWithHooks'>
             <h1>**********With Hooks************</h1>
 
-            {/* <h1>The {this.props.teamname}</h1> */}
-            {/* <img src={this.props.logo} alt="" className="logo" /> */}
+            <h1>The {props.teamname}</h1>
+            <img src={props.logo} alt="" className="logo" />
             <h2>Shots taken:{shotstaken}</h2>
             <h2 className='scorecounter'>Score:{score}</h2>
             <h2>Shot Percentage:{shotpercentage} %</h2>
@@ -57,21 +63,8 @@ function GameWithHooks(props) {
 
 
 
-            <div className="Game">
-                {/* <Team
-                    teamname="Tigers"
-                    logo="https://cdn.logojoy.com/wp-content/uploads/2018/05/30161552/8_big16-768x591.png"
-                />
-                <img src="https://www.nicepng.com/png/full/20-200345_street-fighter-vs-png-vs-street-fighter-logo.png"
-                    alt="" className='versusPic' /> */}
-
-                {/* <Team
-                    teamname="Gonzos"
-                    logo={TeamTwoLogo}
-                /> */}
 
             </div >
-        </div >
 
 
     )
@@ -83,4 +76,10 @@ function GameWithHooks(props) {
 
 
 
-export default GameWithHooks;
+export default TeamWithHooks;
+
+
+// 6/14/2022
+
+// The shots, score and shot percentage are working but not in the way i want, 
+// need to revaluate the shot percentage stuff
